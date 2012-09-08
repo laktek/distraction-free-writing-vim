@@ -1,6 +1,6 @@
 ## Distraction Free Writing for Vim
 
-Checkout this blog post for further instrutions: http://laktek.com/2012/09/05/
+* Copy `plugin/DistractionFree.vim` to `~/.vim/plugin`
 
 * Copy `syntax/mkd.vim` to `~/.vim/syntax`
 
@@ -8,5 +8,17 @@ Checkout this blog post for further instrutions: http://laktek.com/2012/09/05/
 
 * Copy `colors/iawriter.vim` to `~/.vim/colors`
 
-* Append the settings in `vimrc` to `~/.vimrc`.
+* In .vimrc, specify the colorschemes and fonts to use in fullscreen mode and normal mode.
 
+	g:fullscreen_colorscheme - colorscheme to use in fullscreen mode 
+	g:fullscreen_font font to use in fullscreen mode 
+	g:normal_colorscheme - colorscheme to use in normal mode 
+	g:normal_font - font to use in normal mode
+
+example: 
+	let g:fullscreen_colorscheme = "iawriter"
+	let g:fullscreen_font = "Cousine:h14"
+	let g:normal_colorscheme = "codeschool"
+	let g:normal_font="Inconsolata:h14"
+
+Checkout this blog post for further details: http://laktek.com/2012/09/05/distraction-free-writing-with-vim

@@ -11,7 +11,6 @@ if exists("syntax_on")
   syntax reset
 endif
 
-set linespace=5
 let g:colors_name="iawriter"
 
 hi Cursor       guifg=fg   		guibg=#54D4FF 
