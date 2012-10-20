@@ -64,10 +64,21 @@ function! ToggleDistractionFreeWriting()
 	endif
 endfunction
 
-let g:fullscreen_colorscheme = "iawriter"
-let g:fullscreen_font = "Cousine:h14"
-let g:normal_colorscheme = "codeschool"
-let g:normal_font="Inconsolata:h14"
+if !exists('g:fullscreen_colorscheme')
+    let g:fullscreen_colorscheme = "iawriter"
+endif
+
+if !exists('g:fullscreen_font')
+    let g:fullscreen_font = "Cousine:h14"
+endif
+
+if !exists('g:normal_colorscheme')
+    let g:normal_colorscheme = "codeschool"
+endif
+
+if !exists('g:normal_font')
+    let g:normal_font="Inconsolata:h14"
+endif
 
 :map <F4> :call ToggleDistractionFreeWriting()<CR>
 
