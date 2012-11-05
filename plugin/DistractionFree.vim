@@ -21,7 +21,9 @@
 
 function! DistractionFreeWriting()
 		exec "colorscheme ".g:fullscreen_colorscheme
-		exec "set gfn=".g:fullscreen_font
+		" added escape function to allow for multiword font names
+		" (AmaruCoder)
+		exec "set gfn=".escape(g:fullscreen_font,' ')
 
 		set background=light
 		set lines=40 columns=100  				 " size of the editable area
@@ -49,7 +51,9 @@ function! ToggleDistractionFreeWriting()
 		set linebreak!
 
 		exec "colorscheme ".g:normal_colorscheme
-		exec "set gfn=".g:normal_font 
+		" added escape function to allow for multiword font names
+		" (AmaruCoder)
+		exec "set gfn=".escape(g:normal_font,' ')
 	else
 		let s:prev_background = &background
 		let s:prev_gfn = &gfn
