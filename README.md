@@ -15,7 +15,7 @@
 		g:normal_colorscheme - colorscheme to use in normal mode 
 		g:normal_font - font to use in normal mode
 
-example: 
+example (macvim): 
 
 ```vim
 	let g:fullscreen_colorscheme = "iawriter"
@@ -23,3 +23,14 @@ example:
 	let g:normal_colorscheme = "codeschool"
 	let g:normal_font="Inconsolata:h14"
 ```
+
+or, for gvim:
+
+```vim
+  let g:fullscreen_colorscheme = "iawriter"
+  let g:fullscreen_font ="Cousine 12"
+  let g:normal_colorscheme= g:colors_name
+  let g:normal_font=&guifont
+```
+
+Under linux, you must manually activate fullscreen mode (ie ALT+F11)
